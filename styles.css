@@ -11,18 +11,8 @@ body {
   border-radius: 8px;
   max-width: 550px;
   margin: auto;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.it-pmu {
-  text-align: center;
-  font-size: 32px;
-  font-weight: bold;
-  color: #2c3e50; /* Dark blue-gray color */
-  margin-bottom: 10px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-
 
 h2 {
   text-align: center;
@@ -38,10 +28,8 @@ form label {
 
 select,
 input[type="text"],
-input[type="email"],
 input[type="tel"],
-input[type="date"],
-textarea {
+input[type="date"] {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
@@ -80,17 +68,17 @@ button:hover {
   font-weight: bold;
 }
 
-#districtsContainer {
+#districtCheckboxes {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
 
-#districtsContainer div {
+#districtCheckboxes div {
   display: flex;
   align-items: center;
 }
 
-#districtsContainer input[type="checkbox"] {
+#districtCheckboxes input[type="checkbox"] {
   margin-right: 5px;
 }
