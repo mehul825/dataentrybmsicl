@@ -1,58 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+  padding: 20px;
+  margin: 0;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <title>Schedule For Entry</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+.container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 550px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-<body>
-    <div class="container">
-        <h2>Schedule For Entry</h2>
-        <form id="dataForm">
-            <label for="schedule_date">Schedule Date:</label>
-            <input type="date" id="schedule_date" required>
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-            <label for="manager">HQ Manager:</label>
-            <select id="manager" required>
-                <option value="">-- Select Manager --</option>
-                <option value="Rohit Kumar">Rohit Kumar</option>
-                <option value="Dharmendra Kumar">Dharmendra Kumar</option>
-                <option value="Shalu Kumari">Shalu Kumari</option>
-                <option value="Rahul Kumar">Rahul Kumar</option>
-                <option value="Vishwanath Singh">Vishwanath Singh</option>
-                <option value="Ritesh Kumar Rohit">Ritesh Kumar Rohit</option>
-                <option value="Markandey Shahi">Markandey Shahi</option>
-            </select>
+form label {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
 
-            <label>District:</label>
-            <select id="district" required>
-                <option value="">-- Select District --</option>
-            </select>
+select,
+input[type="text"],
+input[type="tel"],
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
 
-            <label for="name">Project Manager / Concern Manager Name:</label>
-            <input type="text" id="name" placeholder="Enter your name with designation" required>
+#countryCode {
+  width: 30%;
+}
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" placeholder="Enter your Gmail ID" pattern="^[a-zA-Z0-9._%+-]+@gmail\.com$"
-                required>
+#phone {
+  width: 70%;
+}
 
-            <label for="phone">Contact:</label>
-            <div style="display: flex; gap: 5px;">
-                <select id="countryCode" required>
-                    <option value="+91" selected>+91 (IN)</option>
-                </select>
-                <input type="tel" id="phone" placeholder="Enter 10-digit number" maxlength="10" inputmode="numeric"
-                    required>
-            </div>
+button {
+  width: 100%;
+  padding: 12px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
 
-            <button type="submit">Submit</button>
-        </form>
+button:hover {
+  background: #45a049;
+}
 
-        <div id="msg"></div>
-    </div>
-    <script src="script.js"></script>
-</body>
+#msg {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: bold;
+}
 
-</html>
+#districtCheckboxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#districtCheckboxes div {
+  display: flex;
+  align-items: center;
+}
+
+#districtCheckboxes input[type="checkbox"] {
+  margin-right: 5px;
+}
