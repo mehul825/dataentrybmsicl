@@ -48,7 +48,7 @@ document.getElementById("dataForm").addEventListener("submit", function (e) {
     phone: document.getElementById("phone").value
   };
 
-  fetch("YOUR_GOOGLE_SCRIPT_URL", {
+  fetch("https://script.google.com/macros/s/AKfycbyKiTEfV0bRCTqa5n-TohWy1DW8ALX1nxmPOoA8VLyHa6petNnpjI15R2DeP9k9axePNg/exec", {
     method: "POST",
     body: JSON.stringify(data),
     headers: {
